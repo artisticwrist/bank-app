@@ -1,0 +1,808 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+/* DOM MANIPULATION */
+
+.display-none{
+    display: none !important;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+section.welcome-entrance{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.first-slide{
+    background: royalblue;
+    color: white;
+}
+
+.welcome-entrance img{
+    width: 120px;
+}
+
+.welcome-entrance h1{
+    font-size: 60px;
+}
+
+.welcome-entrance h1, .welcome-entrance p{
+    text-align: center;
+    width: 350px;
+}
+
+.welcome-entrance h1, .welcome-entrance img, .welcome-entrance p, .welcome-entrance button{
+    margin: 10px 0px;
+}
+
+.welcome-entrance button{
+    width: 150px;
+    height: 45px;
+    border: none;
+    background: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.btn-next{
+    background: royalblue;
+    color: white;
+}
+
+.welcome-entrance form{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-entrance form button{
+    width: 100%;
+    color: #ffff;
+    height: 50px;
+    background: royalblue;
+    border-radius: 10px;
+}
+
+.welcome-entrance form p{
+    width: 300px;
+}
+
+.welcome-entrance form button a{
+    color: #ffff;
+    text-decoration: none;
+}
+
+button.first-btn{
+    background: white;
+}
+
+.welcome-entrance form input.input-text{
+    margin: 10px 0px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(236, 236, 236);
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+
+.welcome-entrance .form-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.form-box p{
+    font-size: 12px;
+    text-align: left;
+}
+
+.form-box .check-box{
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+}
+
+.form-box p{
+    margin: 0px 10px;
+}
+
+p.sign-up-text{
+    text-align: center;
+}
+
+.welcome-entrance .header-form{
+    width: 350px;
+    margin: 20px 0px;
+}
+
+.header-form h1{
+    text-align: left;
+}
+
+.header-form p{
+    text-align: left;
+}
+
+/* USER SECTION */
+
+
+
+.header-text{
+    font-size: 40px;
+    color: rgb(63, 63, 63);
+}
+
+.sub-header-text {
+    font-size: 18px;
+    color: rgb(99, 99, 99);
+    margin: 20px 0px;
+}
+
+header{
+    height: 30vh;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+nav{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+/* HAM BURGER */
+
+nav .hamburger{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger .burger{
+    height: 4px;
+    background: royalblue;
+}
+
+.burger-line-one, .burger-line-three{
+    width: 15px;
+}
+
+.burger-line-three{
+    margin-left: 15px;
+}
+
+nav .user-profile{
+    width: 25px;
+    height: 25px;
+    background:none;
+    border: 3px solid royalblue;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.user-profile .dot{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: royalblue;
+    position: absolute;
+    right: -20%;
+    top: -20%;
+    border: 3px solid #f1f0f5;
+}
+
+
+header h1, header h3, .card-section h1{
+    margin: 10px 0px;
+} 
+
+
+header h1 span{
+    color: royalblue;
+}
+
+.over-view{
+    padding: 20px;
+}
+
+
+.overview-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.overview-box{
+    width: 45%;
+    height: 120px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 35px 20px rgb(231, 231, 231);
+}
+
+.overview-flex .first-box{
+    color: white;
+    background: royalblue;
+}
+
+.overview-flex .second-box{
+    background: white;
+    color: royalblue;
+}
+
+.overview-box h4, .over-view p{
+    margin: 5px;
+}
+
+/* SECTION OPERATIONS */
+
+.operation-flex{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+
+.operation-flex .flex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.operations-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height:150px;
+    border-radius: 10px;
+    background: #ffff;
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+    transition: .3s ease;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219), 5px 5px 10px rgb(241, 241, 241);
+}
+
+.operations-box:hover{
+    background: royalblue;
+    color: white;
+}
+
+.operations-box img, .operations-box h5{
+    margin: 5px 0px;
+}
+
+.operations-box img{
+    width: 30px;
+}
+
+
+/* COMPLETE  PROFILE SECTION */
+
+.complete-box{
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+    background: white;
+    padding: 5px 10px;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219), 5px 5px 10px rgb(241, 241, 241);
+}
+
+.complete-bar{
+    width: 100%;
+    height: 10px;
+    background: rgb(236, 236, 236);
+    border-radius: 20px;
+    position: relative;
+}
+
+.complete-bar-count{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 10px;
+    background: royalblue;
+    border-radius: 20px;
+}
+
+
+/* CARD SECTION */
+
+section.card-section{
+    padding: 0px 20px;
+    position: relative;
+}
+
+.card-section p{
+    color: rgb(99, 99, 99);
+}
+
+.available-cards{
+    margin: 20px 0px;
+    opacity: 0.8;
+    display: flex;
+}
+
+img.add-btn{
+    width: 30px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.card-setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    background: white;
+    width: 85%;
+    box-shadow: 3px 3px 10px rgba(218, 212, 230, 0.479);
+}
+
+.card-setting .flex {
+    display: flex;
+    align-items: center;
+}
+
+.card-setting img{
+    width: 20px;
+}
+
+.card-setting p{
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.card-setting button{
+    background: none;
+    border: 2px solid royalblue;
+    color: royalblue;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.card-setting button:hover{
+    background: royalblue;
+    color: white;
+}
+
+/* NEW CARD SECTION */
+
+.new-card-section form{
+    margin: 30px 0px;
+    width: 100%;
+}
+
+.new-card-section input{
+    border: none;
+    border-radius: 10px;
+    background: white;
+    padding: 20px;
+    color: rgb(226, 226, 226);
+    margin: 10px 0px;
+    font-weight: bold;
+}
+
+input.input-box{
+    width: 100%;
+}
+
+.new-card-section .form-group{
+    display: flex;
+    align-items: center;
+}
+
+input.expiration{
+    width: 70%;
+}
+
+input.cvv-input{
+    width: 30%;
+    margin-left: 20px;
+}
+
+.new-card-section form button{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-size: 16px;
+    margin: 10px 0px;
+    background: royalblue;
+    box-shadow: 5px 10px 30px rgba(109, 129, 189, 0.596);
+    font-weight: bold;
+}
+
+.back-box{
+    height:10vh;
+}
+
+button.back{
+    border: none;
+    background: none;
+    color: royalblue;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+}
+
+
+/* TRANSFER MONEY SECTION */
+
+section.transfer-section{
+    padding: 20px;
+}
+
+.select-option-box{
+    margin: 20px 0px;
+}
+
+
+.select-option-box h3{
+    margin: 10px 0px;
+}
+
+.select-option-flex{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.select-option-flex .first-option{
+    margin-left: 0px !important;
+}
+
+.select-option-flex .options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    cursor: pointer;
+    width: 22%;
+    height: 125px;
+    border-radius: 10px;
+    margin-left: 8px;
+    color: rgb(63, 63, 63);
+    transition: .3s ease;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219), 5px 5px 10px rgb(241, 241, 241);
+}
+
+
+.select-option-flex .options:hover{
+    background: royalblue;
+    color: white;
+}
+
+.options img{
+    width: 25px;
+}
+
+.options img, .options p{
+    margin: 5px 0px;
+    font-size: 12px;
+}
+
+/* REECNT RECEIPTS */
+
+.recent-receipts-box{
+    padding: 10px;
+    margin: 30px 0px;
+    background: white;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219), 5px 5px 10px rgb(241, 241, 241);
+}
+
+.recent-receipts-box h3{
+    margin: 10px 10px;
+}
+
+.receipts-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.receipts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 7px;
+    width:20%;
+    height: 120px;
+    color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+
+.receipts img{
+    width: 45px;
+    height: 45px;
+    background: rgba(119, 69, 236, 0.288);
+    border-radius: 50%;
+}
+
+.receipts img, .receipts p{
+    margin: 5px 0px;
+    font-size: 12px;
+}
+
+button.tf-back-btn{
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: royalblue;
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* BANK TRANSFER SECTION */
+
+.select-amount-box{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219), 5px 5px 10px rgb(241, 241, 241);
+}
+
+.select-amount-box h3{
+    text-align: center;
+}
+
+.select-amount{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.select-amount img{
+    width:35px;
+    cursor: pointer;
+}
+
+.select-amount h1{
+    font-size: 30px;
+}
+
+
+.select-amount img, .select-amount h1{
+    margin: 0px 10px;
+}
+
+
+.quick-amount-option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+}
+
+.quick-amount-option .amount{
+    width: fit-content;
+    padding: 10px;
+    background: royalblue;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.amount:hover{
+    opacity: 0.6;
+}
+
+/* SWEND TO BOX*/
+
+.send-to-box{
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219), 5px 5px 10px rgb(241, 241, 241);
+}
+
+.send-to{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.send-option{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+}
+
+.send-option img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(99, 99, 99)
+}
+
+
+.send-option img, .send-option p{
+    margin: 7px 0px;
+    font-size: 13px;
+    color: rgb(99, 99, 99);   
+}
+
+
+.tf-btn-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.tf-btn-box button{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border:none;
+    box-shadow: 0px 5px 10px rgb(219, 219, 219), 5px 5px 10px rgb(241, 241, 241);
+}
+
+button.tf-btn{
+    background: royalblue;
+    color: white;
+}
+
+button.cancle-btn{
+    background: white;
+    color: royalblue;
+}
+
+
+/* USER SETTINGS */
+
+.pfp-box{
+    position: relative;
+    height: 40vh;
+    background: silver;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pfp-box .overlay{
+    position: absolute;
+    width: 100%;
+    height: 40vh;
+    background: rgba(0, 0, 0, 0.425);
+}
+
+.change-pfp{
+    display: flex;
+    justify-content: right;
+    padding: 20px;
+}
+
+.change-pfp img{
+    cursor: pointer;
+    width: 30px;
+}
+
+.user-name, .bvn{
+    margin: 20px;
+}
+
+
+div.edit-profille{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    font-weight: bold;
+    color: rgb(99, 99, 99);
+    font-size: 18px;
+}
+
+button.sign-out-btn{
+    margin: 30px 20px;
+    padding: 15px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: crimson;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+footer{
+    position: sticky;
+    bottom: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-nav{
+    width: 70%;
+    font-size: 12px;
+    height: 9vh;
+    background: royalblue;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 2px 2px 10px white;
+}
+
+.footer-item{
+    display: flex;
+    align-items: center;
+    color: rgb(23, 41, 94);
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-item img{
+    width: 20px;
+    height: 20px;
+}
+
+.footer-item img, .footer-item p{
+    margin: 0px 2px;
+}
+
+.footer-home-body{
+    background: white;
+}

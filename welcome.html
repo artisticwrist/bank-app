@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank app</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="welcome-page">
+    <!-- WELCOME PAGE -->
+    <section class="welcome-entrance first-slide">
+        <img src="images/Group.svg" alt="">
+        <h1>Meela</h1>
+        <p>Your favorite bank app.</p>
+        <button class="first-btn" onclick="nextSlide()">Next</button>
+    </section>
+
+    <!--wELCOME PAGE 2 -->
+    <section class="welcome-entrance display-none second-slide">
+        <img src="images/ic_outline-settings.svg" alt="">
+        <h1>Encrypted</h1>
+        <p>Our new encrypted process makes it more secure between you and yyour bank</p>
+        <button class="btn-next" onclick="secondSlide()">Next</button>
+        <button onclick="skipwelcome()">Skip</button>
+    </section>
+
+    <!--wELCOME PAGE 3 -->
+    <section class="welcome-entrance display-none third-slide">
+        <img src="images/Vector (4).svg" alt="">
+        <h1>Easy to use</h1>
+        <p>Manage your bank account, financial transaction, Its all easy like never before</p>
+        <button class="btn-next" onclick="thirdslide()">Next</button>
+        <button onclick="skipwelcome()">Skip</button>
+    </section>
+
+    <!--wELCOME PAGE 4 -->
+    <section class="welcome-entrance display-none fourth-slide">
+        <img src="images/Vector (3).svg" alt="">
+        <h1>Fast & Secure</h1>
+        <p>Don't worry about 3rd party Hacks, It is fast and secure</p>
+        <button class="btn-next" onclick="fourthslide()">Next</button>
+        <button onclick="skipwelcome()">Skip</button>
+    </section>
+
+    <!--wELCOME PAGE 5 -->
+    <section class="welcome-entrance display-none fifth-slide">
+        <img src="images/ion_card-outline.svg" alt="">
+        <h1>Fastest card link</h1>
+        <p>Your favorite bank app.</p>
+        <button class="btn-next" onclick="fifthslide()">Sign up</button>
+        <button onclick="skipwelcome()">Skip</button>
+    </section>
+
+    <!--SIGN UP NOW -->
+    <section id="signup" class="welcome-entrance display-none sign-up-slide">
+        <h1>Welcome</h1>
+        <p>Please provide following details for your new account</p>
+        <form action="">
+            <input type="text" placeholder="First Name" class="input-text">
+            <input type="text" placeholder="Last Name" class="input-text">
+            <input type="email" placeholder="Email Address" class="input-text">
+            <input type="password" placeholder="Password" class="input-text">
+            <div class="form-box">
+                <input type="checkbox" class="check-box">
+                <p>Be creating your account you have to agree with our Terms and Conditions.</p>
+            </div>
+            <button>Sign up my account</button>
+            <div class="form-box">
+                <p class="sign-up-text">Already have an account ?. <a href="signin.html">Sign in</a></p>
+            </div>
+        </form>
+    </section>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>

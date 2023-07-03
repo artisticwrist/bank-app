@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+
+    <section class="body">
+
+        <!-- NAVIGATION  BAR -->
+        <nav>
+            <div class="hamburger" onclick="footerHomeClick()">
+                <div class="burger-line-one burger"></div>
+                <div class="burger-line-two burger"></div>
+                <div class="burger-line-three burger"R></div>
+            </div>
+            <div class="user-profile" onclick="footerProfileClick()">
+                <div class="dot"></div>
+            </div>
+        </nav>
+
+        <!-- USER HOME PAGE -->
+        <section class="user-home">
+            <!-- USER SECTION HEADER && NAV -->
+            <header>
+                <h3>Hello</h3>
+                <h1 class="header-text">User <span>name</span></h1>
+
+            </header>
+
+            <!-- SECTION OVERVIEW -->
+            <section class="over-view">
+                <h3 class="sub-header-text">Overview</h3>
+                <div class="overview-flex">
+                    <div class="overview-box first-box">
+                        <h4>Balance</h4>
+                        <P>$17,000</P>
+                    </div>
+                    <div class="overview-box second-box">
+                        <h4>Expenses</h4>
+                        <P>$25,000</P>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION OPERATIONS -->
+            <section class="over-view">
+                <h3  class="sub-header-text">Operations</h3>
+                <div class="operation-flex">
+                    <div class="flex">
+                        <div class="operations-box" onclick="showTransferSection()">
+                            <img src="images/mingcute_transfer-line.svg" alt="">
+                            <h5>Transfer</h5>
+                        </div>
+                        <div class="operations-box">
+                            <img src="images/streamline_money-atm-card-3-deposit-money-payment-finance-atm-withdraw.svg" alt="">
+                            <h5>Withdraw</h5>
+                        </div>
+                        <div class="operations-box">
+                            <img src="images/deposit.svg" alt="">
+                            <h5>Deposit</h5>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="operations-box" onclick="footerCardClick()">
+                            <img src="images/ion_card-outline.svg" alt="">
+                            <h5>My cards</h5>
+                        </div>
+                        <div class="operations-box">
+                            <img src="images/mdi_analytics.svg" alt="">
+                            <h5>Analytics</h5>
+                        </div>
+                        <div class="operations-box">
+                            <img src="images/typcn_chart-line.svg" alt="">
+                            <h5>Budget</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION COMPLETE PROFILE -->
+
+            <section class="over-view">
+                <h3  class="sub-header-text">Complete Profile</h3>
+                <div class="complete-box">
+                    <h3  class="sub-header-text">60% complete</h3>
+                    <div class="complete-bar">
+                        <div class="complete-bar-count"></div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- CARD SECTION -->
+        <section class="card-section display-none">
+            <!-- MAIN  CARD PAGE -->
+            <div class="main-card-section">
+                <h1 class="header-text">Your Cards</h1>
+                <h3  class="sub-header-text">Your available cards </h3>
+                <div class="available-cards">
+                    <img src="/images/card.png" alt="">
+                    <img src="images/add.svg" alt="" class="add-btn" onclick="newCardPage()">
+                </div>
+                <h3 class="sub-header-text">Card Settings</h3>
+    
+                <div class="card-setting">
+                    <div class="flex">
+                        <img src="images/payment.svg" alt="">
+                        <p>Contactless Payments</p>
+                    </div>
+                    <button class="first-btn" onclick="cardsettingClick()">Turn on</button>
+                </div>
+    
+                <div class="card-setting">
+                    <div class="flex">
+                        <img src="images/ion_card-outline.svg" alt="">
+                        <p>Online payment</p>
+                    </div>
+                    <button class="second-btn" onclick="cardsettingClickTwo()">Turn on</button>
+                </div>
+    
+                <div class="card-setting">
+                    <div class="flex">
+                        <img src="images/streamline_money-atm-card-3-deposit-money-payment-finance-atm-withdraw.svg" alt="">
+                        <p>ATM withdraws</p>
+                    </div>
+                    <button class="third-btn" onclick="cardsettingClickThree()">Turn on</button>
+                </div>
+            </div>
+
+            <!-- ADD NEW CARD PAGE -->
+            <section class="new-card-section display-none">
+                <h1 class="header-text">Add New Card</h1>
+                <img src="/images/card.png" alt="">
+                <form action="">
+                    <h3  class="sub-header-text">Fill in the fields below to add a new card</h3>
+                    <input type="text" placeholder="Place 14-digits card number" class="input-box">
+                    <input type="text" placeholder="Card holder name" class="input-box">
+                    <div class="form-group">
+                        <input type="text" placeholder="Expiration Date" class="expiration">
+                        <input type="text" placeholder="CVV" class="cvv-input">
+                    </div>
+                    <button>Submit Card</button>
+                </form>
+                <div class="back-box">
+                    <button class="back" onclick="backMainCard()">Back</button>
+                </div>
+                
+            </section>
+        </section>
+
+        <!-- SETTINGS SECTION -->
+        <section class="settings-section display-none" >
+
+        </section>
+
+
+        <!-- PROFILE SECTION -->
+        <section class="profile-section display-none">
+            <div class="pfp-box" style="background-image: url(images/pfp.jpg);">
+                <div class="overlay">
+                    <div class="change-pfp">
+                        <img src="images/setting-white.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="user-name">
+                <h3 class="sub-header-text">USER</h3>
+                <h1 class="header-text">NAME</h1>
+            </div>
+            <hr>
+            <div class="bvn">
+                <h3 class="sub-header-text">BVN</h3>
+                <P class="sub-header-text"><b>3454345676543</b></P>
+            </div>
+            <hr>
+            <div class="bvn">
+                <h3 class="sub-header-text">Date of birth</h3>
+                <P class="sub-header-text"><b>DD / MM /YYYY</b></P>
+            </div>
+            <hr>
+            <div class="bvn">
+                <h3 class="sub-header-text">PASSWORD</h3>
+                <P class="sub-header-text"><b>..........</b></P>
+            </div>
+            <hr>
+            <div class="edit-profille">Edit Profile</div>
+            <button class="sign-out-btn">SIGN OUT</button>
+            </div>
+        </section>
+
+
+        <!-- TRANSFER FUND SECTION -->
+        <section class="transfer-section display-none">
+            <div class="tf-home-box">
+                <h1 class="header-text">Send Money</h1>
+                <!-- TF OPTIONS -->
+                <div class="select-option-box">
+                    <h3  class="sub-header-text">Select Option</h3>
+                    <div class="select-option-flex">
+                        <div class="first-option options" onclick="showBankTfPage()">
+                            <img src="images/bank.svg" alt="">
+                            <p>Bank</p>
+                        </div>
+                        <div class="options">
+                            <img src="images/streamline_money-atm-card-3-deposit-money-payment-finance-atm-withdraw.svg" alt="">
+                            <p>TopUp</p>
+                        </div>
+                        <div class="options">
+                            <img src="images/qr-code.svg" alt="">
+                            <p>Qr Code</p>
+                        </div>
+                        <div class="options">
+                            <img src="images/gps.svg" alt="">
+                            <p>Nearby</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- RECENT RECEIPTS -->
+                <div class="recent-receipts-box">
+                    <h3  class="sub-header-text">Recent Receipts</h3>
+                    <div class="receipts-flex">
+                        <div class="receipts">
+                            <img src="" alt="">
+                            <p>Contact</p>
+                        </div>
+                        <div class="receipts">
+                            <img src="" alt="">
+                            <p>Contact</p>
+                        </div>
+                        <div class="receipts">
+                            <img src="" alt="">
+                            <p>Contact</p>
+                        </div>
+                        <div class="receipts">
+                            <img src="" alt="">
+                            <p>Contact</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <button class="tf-back-btn" onclick="closeTfSection()">Back</button>
+            </div>    
+            
+            <section class="bank-trasnfer display-none">
+                <h1 class="header-text">SET AMOUNT</h1>
+                <h3 class="sub-header-text">How much would you like to send ?</h3>
+                <div class="select-amount-box">
+                    <div class="select-amount">
+                        <img src="images/minus.svg" alt="" onclick="decrementCount()">
+                        <h1>$ <span class="amount-count">0</span>.00</h1>
+                        <img src="images/add.svg" alt="" onclick="incrementCount() ">
+                    </div>
+                    <h3 class="sub-header-text">Quick Actions</h3>
+                    <div class="quick-amount-option">
+                        <div class="amount" onclick="addFiveHundred()">$500</div>
+                        <div class="amount" onclick="addOneFive()">$1,500</div>
+                        <div class="amount" onclick="addTwoThousand()">$2,000</div>
+                        <div class="amount" onclick="addTenThousand()">$10,000</div>
+                    </div>
+                </div>
+
+                <!-- SEND TO BOX -->
+                <div class="send-to-box">
+                    <h3 class="sub-header-text">Who do you want to send to ?</h3>
+                    <div class="send-to">
+                        <div class="send-option">
+                            <img src="" alt="">
+                            <p>Contact</p>
+                        </div>
+                        <div class="send-option">
+                            <img src="" alt="">
+                            <p>Contact</p>
+                        </div>
+                        <div class="send-option">
+                            <img src="" alt="">
+                            <p>Contact</p>
+                        </div>
+                        <div class="send-option">
+                            <img src="" alt="">
+                            <p>Contact</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tf-btn-box">
+                    <button class="tf-btn">Transfer</button>
+                    <button class="cancle-btn" onclick="backToTfSection()">Cancle</button>
+                </div>
+            </section>
+        </section>
+
+
+        <!-- STICKY BOTTOM NAV FOOTER -->
+        <footer>
+            <div class="footer-nav">
+                <div class="footer-item footer-home-body" onclick="footerHomeClick()">
+                    <img src="images/octicon_home-16.svg" alt="">
+                    <p class="home-p"><b>Home</b></p>
+                </div>
+                <div class="footer-item footer-card-body" onclick="footerCardClick()">
+                    <img src="images/ion_card-outline.svg" alt="">
+                    <p class="display-none card-p"><b>Card</b></p>
+                </div>
+                <div class="footer-item footer-profile-body" onclick="footerProfileClick()">
+                    <img src="images/iconamoon_profile-circle.svg" alt="">
+                    <p class="display-none profile-p"><b>Profile</b></p>
+                </div>
+            </div>
+        </footer>
+        
+    </section>
+
+<script src="js/app.js"></script>
+</body>
+</html>
